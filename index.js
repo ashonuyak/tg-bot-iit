@@ -1,6 +1,8 @@
 const TelegramBot = require('node-telegram-bot-api');
 
-const bot = new TelegramBot('YOUR_BOT_TOKEN', {polling: true});
+const bot = new TelegramBot('6039853162:AAGevjnTF-7Y_i7UlT1Ve0wltVrk-2cdocI', {
+  polling: true,
+})
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
